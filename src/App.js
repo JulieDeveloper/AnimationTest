@@ -1,7 +1,5 @@
 import { useState, useEffect} from 'react';
 
-
-
 import logo from './assets/images/logo_2023WC.png';
 import img from './assets/images/img_calendar.png';
 import logoMWN from './assets/images/logo_MWN.png';
@@ -47,7 +45,6 @@ function Bar({soldNum,start,end,halfWidth}){
         <span 
           className="bar-completed" 
           style={{width:`${barLength}%`}}
-          // style={{width:'10%'}}
         >
         </span>
       </div>
@@ -57,11 +54,8 @@ function Bar({soldNum,start,end,halfWidth}){
       <div className={`bar-wrapper ${wrapperClass}`}>
         <span className="bar-bg"></span>
       </div>
-
     )
   }
-
-  
 }
 
 function useCountdown(targetDate){
@@ -287,5 +281,3 @@ function App() {
 }
 
 export default App;
-
-
